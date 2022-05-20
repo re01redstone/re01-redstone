@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: rgb(220, 220, 220)">
+    <style>
+      .flex1 {
+        display: flex;
+        justify-content: flex-start;
+        margin: 5px;
+        margin-right: 200px;
+        background-color: white;
+        flex: 0.5;
+        height: 1000px;
+        border-radius: 10px;
+      }
+      .flex2 {
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+        margin-bottom: 50px;
+        background-color: white;
+        height: 50px;
+        border-radius: 10px;
+      }
+      .flex3 {
+        justify-content: flex-end;
+        margin: 5px;
+        flex: 2;
+      }
+      .flex4 {
+        display: flex;
+      }
+      .flex5 {
+        margin: 30px;
+        background-color: white;
+        border-radius: 10px;
+        height: 200px;
+        width: 550px;
+      }
+    </style>
+    <div class="flex2"></div>
+    <div class="flex4">
+      <div class="flex1"></div>
+      <div class="flex3">
+        <div class="flex5"></div>
+        <div class="flex5"></div>
+        <div class="flex5"></div>
+        <div class="flex5"></div>
+      </div>
+    </div>
+  </body>
+</html>

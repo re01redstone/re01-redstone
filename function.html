@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的第一个JavaScript</title>
+</head>
+</body>
+<h3>加</h3>
+<input id="jiafakuang1">
+<p>+</p>
+<input id="jiafakuang2">
+<button onclick="jia()">输出</button>
+<br><hr>
+<script>
+  function jia() {
+    let jia1zifu = window.document.getElementById("jiafakuang1").value;
+    let jia1 = parseInt(jia1zifu);
+    let jia2zifu = window.document.getElementById("jiafakuang2").value;
+    let jia2 = parseInt(jia2zifu);
+    let jiajieguo = jia1 + jia2
+    window.alert(jiajieguo)
+  }
+</script>
+<h3>减</h3>
+<input id="jianfakuang1">
+<p>-</p>
+<input id="jianfakuang2">
+<button onclick="jian()">输出</button>
+<br><hr>
+<script>
+  function jian(){
+    let jian1zifu = window.document.getElementById("jianfakuang1").value;
+    let jian1 = parseInt(jian1zifu);
+    let jian2zifu = window.document.getElementById("jianfakuang2").value;
+    let jian2 = parseInt(jian2zifu);
+    let jianjieguo = jian1 - jian2
+    window.alert(jianjieguo)
+  }
+  </script>
+  <h3>乘</h3>
+<input id="chengfakuang1">
+<p>*</p>
+<input id="chengfakuang2">
+<button onclick="cheng()">输出</button>
+<script>
+  function cheng(){
+    let cheng1zifu = window.document.getElementById("chengfakuang1").value;
+    let cheng1 = parseInt(cheng1zifu);
+    let cheng2zifu = window.document.getElementById("chengfakuang2").value;
+    let cheng2 = parseInt(cheng2zifu);
+    let chengjieguo = cheng1 * cheng2
+    window.alert(chengjieguo)
+  }
+  </script>
+    <h3>除</h3>
+<input id="chufakuang1">
+<p>/</p>
+<input id="chufakuang2">
+<button onclick="chu()">输出</button>
+<script>
+  function chu(){
+    let chu1zifu = window.document.getElementById("chufakuang1").value;
+    let chu1 = parseInt(chu1zifu);
+    let chu2zifu = window.document.getElementById("chufakuang2").value;
+    let chu2 = parseInt(chu2zifu);
+    let chujieguo = chu1 / chu2
+    window.alert(chujieguo)
+  }
+  </script>
+</body>
+</html>
